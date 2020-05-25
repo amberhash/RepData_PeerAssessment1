@@ -9,8 +9,6 @@ This assignment makes use of data from a personal activity monitoring device. Th
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Loading and preprocessing the data
 Loading the data:
 ```{r loading, message=FALSE, warning=FALSE,cache=TRUE}
 temp <- tempfile()
@@ -106,4 +104,3 @@ png("Time Series Plot of imputed average steps in each interval.png")
 xyplot(IntervalMeanWk$MeanSteps~seq_along(IntervalMeanWk$interval)|IntervalMeanWk$week,type=c("l"),ylab="Average of Steps Taken",xlab="Time Interval",main="Time Series Plot of Interval and Average Steps by Weekday or Weekend",layout=c(1,2))
 dev.off()
 ```
-
