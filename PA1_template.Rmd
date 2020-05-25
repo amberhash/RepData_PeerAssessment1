@@ -9,6 +9,8 @@ This assignment makes use of data from a personal activity monitoring device. Th
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Loading and preprocessing the data
 Loading the data:
 ```{r loading, message=FALSE, warning=FALSE,cache=TRUE}
 temp <- tempfile()
